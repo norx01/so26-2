@@ -4,10 +4,8 @@ public class RaceCondition
 {
     static int counter = 0;
 
-    static void main() throws Exception
+    public void runTest(int thread, int iters) throws InterruptedException
     {
-        int thread = 8;
-        int iters = 100_000;
         Thread[] threads = new Thread[thread];
         for (int i = 0; i < thread; i++)
         {
